@@ -1,0 +1,53 @@
+CREATE TABLE Admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    username VARCHAR(50),
+    FOREIGN KEY (username) REFERENCES Person(username)
+);
+
+INSERT INTO jobportal.admin (id, name, email, address, username)
+ VALUES ('301', 'adarsh', 'adarsh@gmail.com', 'hyd', 'adarsh1'),
+        ('302', 'anish', 'anish@gmail.com', 'hyd', 'anish2'),
+        (303, 'akhila', 'akhila@gmail.com', 'hyd', 'akhila3'),
+		(304, 'shekar', 'shekar@gmail.com', 'hyd', 'shekar4'),
+		(305, 'pavan', 'pavan@gmail.com', 'hyd', 'pavan5'),
+		(306, 'sanjay', 'sanjay@gmail.com', 'hyd', 'sanjay6'),
+		(307, 'sathwika', 'sathwika@gmail.com', 'hyd', 'sathwika7'),
+		(308, 'siddharth', 'siddharth@gmail.com', 'hyd', 'siddharth8'),
+        (309, 'swaraj', 'swaraj@gmail.com', 'hyd', 'swaraj9'),
+	    (310, 'durga', 'durga@gmail.com', 'hyd', 'durga10'),
+		(311, 'rahul', 'rahul@gmail.com', 'hyd', 'rahul11'),
+		(312, 'praveen', 'praveen@gmail.com', 'hyd', 'praveen12'),
+		(313, 'venkanna', 'venkanna@gmail.com', 'hyd', 'venkanna13'),
+		(314, 'bhagyalakshmi', 'bhagyalakshmi@gmail.com', 'hyd', 'bhagyalakshmi14'),
+		(315, 'giridhar', 'giridhar@gmail.com', 'hyd', 'giridhar15');
+                             
+                             
+CREATE TABLE Company (
+    c_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    description TEXT
+);  
+
+INSERT INTO jobportal.company (c_id, name, address, description) 
+VALUES ('401', 'Amazon', 'hyd', 'Develop and execute Amazon strategies aligned with overall business goals, focusing on driving sales and increasing visibility'),
+	   ('402', 'Flipkart', 'hyd', 'Provide quotes and information to customers related to their products. Provide information including Delivery time and other queries related to the product'),
+       ('403', 'Oracle', 'hyd', 'The roles and responsibilities of Oracle developers include designing, developing, testing and maintaining Oracle databases and applications to ensure they meet industry standards and user requirements'),
+       ('404', 'TCS', 'hyd', 'Process and manage customer requests, inquiries, and transactions. Adhere to standard operating procedures (SOPs) for efficient workflow');
+       
+
+CREATE TABLE Job (
+    job_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    company_id INT,
+    FOREIGN KEY (company_id) REFERENCES Company(c_id)
+);
+
+INSERT INTO jobportal.job (job_id, title, description, company_id) 
+VALUES ('501', 'Junior software developer', 'We are an edtech startup that trains candidates for sales roles, gets them placed, and coaches them until they start making 1,00,000 per month', '401'),
+       ('502', 'Python developer', 'Develop and maintain Python-based applications Assist in designing and implementing software solutions', '402'),
+	   ('503', 'Full stack web developer', 'Develop and execute strategies for business growth in new and existing markets', '403');

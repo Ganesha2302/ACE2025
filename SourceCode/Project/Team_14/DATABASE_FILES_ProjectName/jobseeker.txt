@@ -1,0 +1,30 @@
+CREATE TABLE Jobseeker (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    j_name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    address VARCHAR(255),
+    contact_no VARCHAR(15),
+    username VARCHAR(50),
+    FOREIGN KEY (username) REFERENCES Person(username)
+);
+INSERT INTO jobseeker VALUES (101, 'adarsh', 'adarsh@gmail.com', 'hyd', '9398355679', 'adarsh1'),
+                             (102, 'anish', 'anish@gmail.com', 'hyd', '9344444678', 'anish2'),
+                             (103, 'akhila', 'akhila@gmail.com', 'hyd', '6688933756', 'akhila3'),
+                             (104, 'shekar', 'shekar@gmail.com', 'hyd', '9800006101', 'shekar4'),
+							 (105, 'pavan', 'pavan@gmail.com', 'hyd', '956006098', 'pavan5'),
+                             (106, 'sanjay', 'sanjay@gmail.com', 'hyd', '9006509689', 'sanjay6'),
+							 (107, 'sathwika', 'sathwika@gmail.com', 'hyd', '8060536845', 'sathwika7'),
+                             (108, 'siddharth', 'siddharth@gmail.com', 'hyd', '9333333331', 'siddharth8'),
+                             (109, 'swaraj', 'swaraj@gmail.com', 'hyd', '9333333332', 'swaraj9'),
+                             (110, 'durga', 'durga@gmail.com', 'hyd', '9333333333', 'durga10'),
+                             (111, 'rahul', 'rahul@gmail.com', 'hyd', '9333333334', 'rahul11'),
+                             (112, 'praveen', 'praveen@gmail.com', 'hyd', '9333333335', 'praveen12'),
+							 (113, 'venkanna', 'venkanna@gmail.com', 'hyd', '9333333336', 'venkanna13'),
+                             (114, 'bhagyalakshmi', 'bhagyalakshmi@gmail.com', 'hyd', '9333333337', 'bhagyalakshmi14'),
+                             (115, 'giridhar', 'giridhar@gmail.com', 'hyd', '9333333338', 'giridhar15');
+                            
+                             
+                             
+                             
+
+
