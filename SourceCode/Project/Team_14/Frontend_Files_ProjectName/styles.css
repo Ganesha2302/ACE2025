@@ -1,0 +1,143 @@
+/* Reset some default browser styling */
+#bt {
+    text-decoration: none;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(2, 29, 45, 0.94), /* Changed to light blue */
+                0 4px 16px rgba(173, 216, 230, 0.2) inset; /* Changed to light blue */
+    display: flex; /* Added to make children align horizontally */
+}
+
+.image-container {
+    margin-right: 20px; /* Spacing between image and form */
+}
+
+.image-container img {
+    max-width:100; /* Ensure image stays within container */
+    height: 550px; /* Maintain aspect ratio */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    font-weight: bold;
+}
+
+.form-control input[type="text"],
+.form-control input[type="password"],.form-control input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: rgba(0, 128, 255, 1);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: aqua;
+}
+
+button[type="submit"]:active{
+    background-color:black;
+}
+
+
+#login {
+    background-color: rgba(0, 128, 255, 1);
+    color: white;
+    border: none;
+    width: 150px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#signin {
+    background-color: rgba(0, 128, 255, 1);
+    color: white;
+    border: none;
+    width: 150px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#login:hover, #signin:hover {
+    background-color: aqua;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center align the buttons */
+    gap: 10px; /* Adjust spacing between buttons */
+}
+
+.styled-link {
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-size: 18px; /* Change the font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Change the text color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for color change */
+}

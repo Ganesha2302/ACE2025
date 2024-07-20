@@ -1,0 +1,44 @@
+drop database if exists JobPortal;
+CREATE DATABASE JobPortal;
+USE JobPortal;
+CREATE TABLE Person (
+    username VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
+INSERT INTO person (username,password,email)
+ VALUES ('adarsh1', '465', 'adarsh@gmail.com'),
+		('anish2', '466', 'anish@gmail.com'),
+		('akhila3', '467', 'akhila@gmail.com'),
+		('shekar4', '468', 'shekar@gmail.com'),
+        ('pavan5', '469', 'pavan@gmail.com'),
+        ('sanjay6', '470', 'sanjay@gmail.com'),
+        ('sathwika7', '471', 'sathwika@gmail.com'),
+        ('siddharth8', '472', 'siddharth@gmail.com'),
+        ('swaraj9', '473', 'swaraj@gmail.com'),
+        ('durga10', '474', 'durga@gmail.com'),
+        ('rahul11', '475', 'rahul@gmail.com'),
+        ('praveen12', '476', 'praveen@gmail.com'),
+        ('venkanna13', '477', 'venkanna@gmail.com'),
+        ('bhagyalakshmi14', '478', 'bhagyalakshmi@gmail.com'),
+        ('giridhar15', '479', 'giridhar@gmail.com'),
+        ('aryan16', '480', 'aryan@gmail.com'),
+        ('sathvika17', '481', 'sathvika@gmail.com'),
+        ('naveen18', '482', 'naveen@gmail.com'),
+        ('veerendar19', '483', 'veerendar@gmail.com'),
+        ('vinay20', '484', 'vinay@gmail.com'),
+        ('manideep21', '485', 'manideep@gmail.com'),
+        ('shiva22', '486', 'shiva@gmail.com'),
+        ('hardik23', '487', 'hardik@gmail.com'),
+        ('dorababu24', '488', 'dorababu@gmail.com'),
+        ('sangeetha25', '489', 'sangeetha@gmail.com'),
+        ('pranay26', '490', 'pranay@gmail.com'),
+        ('karthik27', '491', 'karthik@gmail.com'),
+        ('balakrishna28', '492', 'balakrishna@gmail.com'),
+        ('karunya29', '493', 'karunya@gmail.com'),
+        ('chaitanya30', '494', 'chaitanya@gmail.com'),
+        ('bhargavi31', '495', 'bhargavi@gmail.com'),
+        ('manohar32', '496', 'manohar@gmail.com'),
+        ('eshwarsai33', '497', 'eshwarsai@gmail.com'),
+        ('ganesh34', '498', 'ganesh@gmail.com'),
+        ('mahantesh35', '499', 'mahantesh@gmail.com');
