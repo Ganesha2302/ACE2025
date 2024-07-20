@@ -1,0 +1,12 @@
+CREATE TABLE Job (
+    job_id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    company_id INT,
+    FOREIGN KEY (company_id) REFERENCES Company(c_id)
+);
+
+INSERT INTO jobportal.job (job_id, title, description, company_id) 
+VALUES ('501', 'Junior software developer', 'We are an edtech startup that trains candidates for sales roles, gets them placed, and coaches them until they start making 1,00,000 per month', '401'),
+       ('502', 'Python developer', 'Develop and maintain Python-based applications Assist in designing and implementing software solutions', '402'),
+	   ('503', 'Full stack web developer', 'Develop and execute strategies for business growth in new and existing markets', '403');
